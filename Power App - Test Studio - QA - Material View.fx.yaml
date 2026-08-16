@@ -1,0 +1,40 @@
+testSuite:
+  testSuiteName: Power App - Test Studio - QA - Material View
+  testSuiteDescription: ''
+  persona: User1
+  appLogicalName: sub_materialflowapp_1362e
+  appId: ''
+  onTestCaseStart: ""
+  onTestCaseComplete: ""
+  onTestSuiteComplete: ""
+  networkRequestMocks: 
+  testCases:
+  - testCaseName: Power App - Test Studio - Qa
+    testCaseDescription: ''
+    testSteps: |
+      = 
+      Select(scrDashboard);
+      Select(ButtonGetStarted);
+      Wait(2000);
+      Select(btnRaiseNewRequest);
+      SetProperty(txtMaterialName.Text, "Test Steel");
+      SetProperty(txtDescription.Text, "Test description");
+      Select(btnRequest);
+testSettings:
+  filePath: 
+  browserConfigurations:
+  - browser: Chromium
+    device: 
+    screenWidth: 0
+    screenHeight: 0
+  locale: en
+  recordVideo: true
+  headless: true
+  enablePowerFxOverlay: false
+  timeout: 30000
+environmentVariables:
+  filePath: 
+  users:
+  - personaName: User1
+    emailKey: user1Email
+    passwordKey: user1Password
